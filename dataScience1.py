@@ -25,3 +25,29 @@ print(kanks)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ['total', 'speeding", 'alcohol', 'not_distracted', 'no_previous", ins_premium", "ins_losses', 'abbrev']
+# Bir veri setindeki değişken isimlerini değiştirmek
+
+import seaborn as sns
+df = sns.load_dataset("car_crashes")
+
+df.columns = [col.upper() for col in df.columns]
+
+
+
+
+
+
