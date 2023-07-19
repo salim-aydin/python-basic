@@ -1,3 +1,11 @@
+numbers = range(10)
+print(numbers)
+
+for number in numbers:
+    print(number)
+
+
+
 
 # Çift sayıların karesi alınarak bir sözlüğe eklenmesi istenmektedir.
 # Key' ler orjinal değerler , value'ler ise değiştirilmiş değerler
