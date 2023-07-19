@@ -92,4 +92,24 @@ print(df.columns)
        'INS_PREMIUM', 'INS_LOSSES', 'ABBREV'],
       dtype='object')
 
+# İsminde "INS" olan değişkenlerin başına FLAG , diğerlerine NO_FLAG eklemek istiyoruz
+
+import seaborn as sns
+df = sns.load_dataset("car_crashes")
+df.columns = [col.upper() for col in df.columns]
+print(df.columns)
+
+degisken1 = [col for col in df.columns if "INS" in col]
+print(degisken1)
+
+
+degisken2 = ["FLAG_" + col for col in df.columns if "INS" in col]
+print(degisken2)
+
+degisken3 = ["FLAG_" + col if "INS" in col else "NO_FLAG_" + col for col in df.columns ]
+print(degisken3)
+
+df.columns =  ["FLAG_" + col if "INS" in col else "NO_FLAG_" + col for col in df.columns ]
+print(df.columns)
+
 
