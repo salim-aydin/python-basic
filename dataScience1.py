@@ -109,25 +109,8 @@ print(degisken2)
 degisken3 = ["FLAG_" + col if "INS" in col else "NO_FLAG_" + col for col in df.columns ]
 print(degisken3)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+df.columns =  ["FLAG_" + col if "INS" in col else "NO_FLAG_" + col for col in df.columns ]
+print(df.columns)
 
 
 
@@ -167,10 +150,3 @@ print(soz)
 
 ## kısa yol
 {col: agg_list for col in num_cols}
-
-
-
-df.columns =  ["FLAG_" + col if "INS" in col else "NO_FLAG_" + col for col in df.columns ]
-print(df.columns)
-
-
