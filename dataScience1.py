@@ -21,6 +21,11 @@ kanks = {n : n ** 2 for n in numbers if n % 2 == 0}
 print(kanks)
 
 
+-------
+
+
+
+
 
 
 
@@ -46,8 +51,45 @@ df = sns.load_dataset("car_crashes")
 
 df.columns = [col.upper() for col in df.columns]
 
+---------
+import seaborn as sns
+df = sns.load_dataset("car_crashes")
+df.columns = [col.upper() for col in df.columns]
+print(df.columns)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# İsminde "INS" olan değişkenlerin başına FLAG , diğerlerine NO_FLAG eklemek istiyoruz
+# df.columns = Index(['TOTAL', 'SPEEDING', 'ALCOHOL', 'NOT_DISTRACTED', 'NO_PREVIOUS',
+       'INS_PREMIUM', 'INS_LOSSES', 'ABBREV'],
+      dtype='object')
 
 
